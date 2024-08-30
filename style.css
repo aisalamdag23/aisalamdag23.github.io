@@ -1,48 +1,124 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+.f-montserrat-bold {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+.f-montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+  
+.photo-1x1 {
+    width: 300px;
+    height: 300px;
 }
 
-header h1 {
-    margin: 0;
+.intro .col:first-child {
+    background: #d6d6d6;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
+#navbarContent a {
     text-decoration: none;
+    position: relative;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+#navbarContent a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 45%;
+    height: 2px;
+    background-color: #00796b;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#navbarContent a:hover::after {
+    transform: scaleX(1);
 }
+
+.intro-icn-link:hover{
+    color: #00796b;
+}
+
+mark {
+    background-color: #00796b38;
+}
+
+.c-underline {
+    text-decoration: underline;
+    text-decoration-color: #00796b; /* Color of the underline */
+    color: black;
+}
+
+@media screen and (max-width: 575.98px) {
+    .header-name {
+        width: 13rem;
+    }
+}
+
+section h1 {
+    position: relative;
+    padding-right: 20px;
+}
+
+section h1 a {
+    text-decoration: none;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+section h1:hover a {
+    opacity: 1;
+    color: #00796b
+}
+
+.c-teal {
+    color: #00796b
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.section-content p span {
+    transition: text-decoration 0.4s ease;
+}
+
+.section-content p span:hover {
+    text-decoration: underline;
+}
+
+.abt-giga-text, .exp-giga-text {
+    display: none;
+    z-index: -1;
+    font-size: 170px;
+    position: absolute;
+    color: #00796b;
+    opacity: 0.06;
+        
+}
+@media screen and (min-width: 768px) {
+    .abt-giga-text {
+        display: flex;
+        right: -25px;
+        bottom: -125px;
+    }
+    .exp-giga-text {
+        display: flex;
+        left: -25px;
+        line-height: 120px;
+        bottom: -550px;
+    }
+}
+
+.f-20 {
+    font-size: 20px !important;
+}
+
