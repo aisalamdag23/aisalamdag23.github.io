@@ -83,6 +83,10 @@ section h1:hover a {
     color: #00796b
 }
 
+.bg-c-teal {
+    background-color: #00796b
+}
+
 .text-justify {
     text-align: justify;
 }
@@ -95,30 +99,46 @@ section h1:hover a {
     text-decoration: underline;
 }
 
-.abt-giga-text, .exp-giga-text {
-    display: none;
-    z-index: -1;
-    font-size: 170px;
-    position: absolute;
-    color: #00796b;
-    opacity: 0.06;
-        
-}
 @media screen and (min-width: 768px) {
-    .abt-giga-text {
-        display: flex;
+    /* .abt-giga-text {
+        display: inline-block;
         right: -25px;
         bottom: -125px;
-    }
-    .exp-giga-text {
-        display: flex;
+    } */
+    /* .exp-giga-text {
+        display: inline-block;
         left: -25px;
         line-height: 120px;
         bottom: -550px;
-    }
+    } */
+}
+.menu-content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.abt-giga-text, .exp-giga-text{
+    position: absolute;
+    z-index: -1;
+    font-size: 170px;
+    color: #00796b;
+    opacity: 0.06;
+    line-height: 120px;
 }
 
 .f-20 {
     font-size: 20px !important;
 }
 
+.r-0 {
+    right: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+.xp-role {
+    font-size: 15px;
+}
