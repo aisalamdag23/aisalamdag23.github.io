@@ -99,32 +99,29 @@ section h1:hover a {
     text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) {
-    /* .abt-giga-text {
-        display: inline-block;
-        right: -25px;
-        bottom: -125px;
-    } */
-    /* .exp-giga-text {
-        display: inline-block;
-        left: -25px;
-        line-height: 120px;
-        bottom: -550px;
-    } */
-}
 .menu-content {
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 3rem;
 }
 
-.abt-giga-text, .exp-giga-text{
+.abt-giga-text, .exp-giga-text {
     position: absolute;
     z-index: -1;
     font-size: 170px;
     color: #00796b;
     opacity: 0.06;
     line-height: 120px;
+}
+
+.prj-giga-text {
+    position: absolute;
+    z-index: -1;
+    font-size: 170px;
+    color: #00796b;
+    opacity: 0.06;
+    line-height: 150px;
 }
 
 .f-20 {
@@ -141,4 +138,24 @@ section h1:hover a {
 
 .xp-role {
     font-size: 15px;
+}
+
+section {
+    scroll-margin-top: 84px;
+}
+
+@media screen and (max-width: 576px) {
+    section {
+        scroll-margin-top: 196px;
+    }
+}
+
+a.with-arrow {
+    text-decoration: none;   
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+a.with-arrow:hover {
+    transform: translateY(-5px);
 }
