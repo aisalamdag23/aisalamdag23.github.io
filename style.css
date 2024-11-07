@@ -159,3 +159,7 @@ a.with-arrow {
 a.with-arrow:hover {
     transform: translateY(-5px);
 }
+
+.cert-container {
+    min-height: 50vh;
+}
